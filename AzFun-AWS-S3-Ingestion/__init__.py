@@ -17,6 +17,7 @@ import re
 from threading import Thread
 from io import StringIO
 
+
 import azure.functions as func
 
 
