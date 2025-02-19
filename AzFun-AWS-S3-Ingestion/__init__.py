@@ -275,8 +275,7 @@ class S3Client:
             sortedLogEvents = self.unpack_file(downloaded_obj, key)      
         elif '.log' in key.lower():
             downloaded_obj = self.download_obj(key)
-            json_file = self.unpack_file(downloaded_obj, key)
-            sortedLogEvents = json.load(json_file)                
+            sortedLogEvents = self.unpack_file(downloaded_obj, key)             
             
         return sortedLogEvents
 
